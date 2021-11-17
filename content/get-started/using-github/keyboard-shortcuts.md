@@ -18,6 +18,9 @@ versions:
 
 Typing <kbd>?</kbd> on {% data variables.product.prodname_dotcom %} brings up a dialog box that lists the keyboard shortcuts available for that page. You can use these keyboard shortcuts to perform actions across the site without using your mouse to navigate.
 
+{% if keyboard-shortcut-accessibility-setting %}
+You can disable character key shortcuts, while still allowing shortcuts that use modifier keys, in your accessibility settings. For more information, see "[Managing accessibility settings](/account-and-profile/setting-up-and-managing-your-github-user-account/managing-user-account-settings/managing-accessibility-settings)."{% endif %}
+
 Below is a list of some of the available keyboard shortcuts.
 {% if command-palette %}
 The {% data variables.product.prodname_command_palette %} also gives you quick access to a wide range of actions, without the need to remember keyboard shortcuts. For more information, see "[{% data variables.product.prodname_command_palette %}](/get-started/using-github/github-command-palette)."{% endif %}
@@ -37,7 +40,7 @@ The {% data variables.product.prodname_command_palette %} also gives you quick a
 |-----------|------------
 |<kbd>g</kbd> <kbd>c</kbd> | Go to the **Code** tab
 |<kbd>g</kbd> <kbd>i</kbd> | Go to the **Issues** tab. For more information, see "[About issues](/articles/about-issues)."
-|<kbd>g</kbd> <kbd>p</kbd> | Go to the **Pull requests** tab. For more information, see "[About pull requests](/articles/about-pull-requests)."{% ifversion fpt or ghes or ghec %}
+|<kbd>g</kbd> <kbd>p</kbd> | Go to the **Pull requests** tab. For more information, see "[About pull requests](/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)."{% ifversion fpt or ghes or ghec %}
 |<kbd>g</kbd> <kbd>a</kbd> | Go to the **Actions** tab. For more information, see "[About Actions](/actions/getting-started-with-github-actions/about-github-actions)."{% endif %}
 |<kbd>g</kbd> <kbd>b</kbd> | Go to the **Projects** tab. For more information, see "[About project boards](/articles/about-project-boards)."
 |<kbd>g</kbd> <kbd>w</kbd> | Go to the **Wiki** tab. For more information, see "[About wikis](/communities/documenting-your-project-with-wikis/about-wikis)."{% ifversion fpt or ghec %}
@@ -94,7 +97,7 @@ For more keyboard shortcuts, see the [CodeMirror documentation](https://codemirr
 | <kbd>control enter</kbd> | Submits a comment
 | <kbd>control .</kbd> and then <kbd>control [saved reply number]</kbd> | Opens saved replies menu and then autofills comment field with a saved reply. For more information, see "[About saved replies](/articles/about-saved-replies)."{% ifversion fpt or ghae-next or ghes > 3.2 or ghec %}
 | <kbd>control shift .</kbd> or <kbd>command shift.</kbd> | Inserts Markdown formatting for a quote{% endif %}{% ifversion fpt or ghec %}
-|<kbd>control g</kbd> or <kbd>command g</kbd> | Insert a suggestion. For more information, see "[Reviewing proposed changes in a pull request](/articles/reviewing-proposed-changes-in-a-pull-request)." |{% endif %}
+|<kbd>control g</kbd> or <kbd>command g</kbd> | Insert a suggestion. For more information, see "[Reviewing proposed changes in a pull request](/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request)." |{% endif %}
 | <kbd>r</kbd> | Quote the selected text in your reply. For more information, see "[Basic writing and formatting syntax](/articles/basic-writing-and-formatting-syntax#quoting-text)." |
 
 ## Issue and pull request lists
